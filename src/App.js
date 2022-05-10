@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import About from './assignment-11/About/About';
 import Footer from './assignment-11/Footer/Footer';
@@ -9,12 +10,13 @@ import ProductDetails from './assignment-11/ProductDetails/ProductDetails';
 import Inventory from './assignment-11/Inventory/Inventory';
 import ManageInventories from './assignment-11/ManageInventories/ManageInventories';
 import AddItem from './assignment-11/AddItem/AddItem';
-import Login from './assignment-11/Login/Login';
+
 import ResetPassword from './assignment-11/ResetPassword/ResetPassword';
 import Register from './assignment-11/Register/Register';
 import MyItems from './assignment-11/MyItems/MyItems';
 import Blogs from './assignment-11/Blogs/Blogs';
 import NotFound from './assignment-11/NotFound/NotFound';
+import Login from './assignment-11/Login/Login';
 
 function App() {
   return (
@@ -31,7 +33,7 @@ function App() {
          <Route path='/addItem' element={<AddItem></AddItem>}></Route>
 
 
-         <Route path="/login" element={<Login />} />
+         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path='/myItem' element={<MyItems></MyItems>}></Route>

@@ -1,0 +1,83 @@
+[
+    {
+        
+        "cycle": "bicycle",
+        "supplier": "ENGINE DIAGNOSTIC",
+        "price": "300",
+        "quantity": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://images.unsplash.com/photo-1503669678209-c68d00b3765d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      
+        "cycle": "bicycle",
+        "supplier": "WHEEL ALIGNMENT",
+        "price": "100",
+        "quantity": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmljeWNsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id": 3,
+        "cycle": "bicycle",
+        "supplier": "OIL CHANGING",
+        "price": "150",
+        "quantity": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmljeWNsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+       
+        "cycle": "bicycle",
+        "supplier": "BRAKE REPARING",
+        "price": "180",
+        "quantity": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://ae01.alicdn.com/kf/H583df5cba6024482beae0a43d4737f68g/Hand-Push-Children-Three-Wheeled-Bicycle-with-Hood-Baby-Bicycle-Multi-Specification-Infant-stroller-3-wheel.jpg_Q90.jpg_.webp"
+    },
+    {
+        
+        "cycle": "bicycle",
+        "supplier": "WASH AND GLASSING",
+        "price": "100",
+        "quantity": "100",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://images.unsplash.com/photo-1577106901574-4629d3108efc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        
+        "cycle": "bicycle",
+        "supplier": "COMPLETE ANALYSIS",
+        "price": "300",
+        "quantity": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://p.globalsources.com/IMAGES/PDT/B1185457890/baby-tricycle-bicycle-walker.png"
+    },
+    {
+        
+        "cycle": "bicycle",
+        "supplier": "COMPLETE ANALYSIS",
+        "price": "300",
+        "quantity": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://p.globalsources.com/IMAGES/PDT/B1185457890/baby-tricycle-bicycle-walker.png"
+    },
+    {
+        
+        "cycle": "bicycle",
+        "supplier": "COMPLETE ANALYSIS",
+        "price": "300",
+        "quantity": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://p.globalsources.com/IMAGES/PDT/B1185457890/baby-tricycle-bicycle-walker.png"
+    },
+    {
+        
+        "cycle": "bicycle",
+        "supplier": "COMPLETE ANALYSIS",
+        "price": "300",
+        "quantity": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://p.globalsources.com/IMAGES/PDT/B1185457890/baby-tricycle-bicycle-walker.png"
+    }
+]

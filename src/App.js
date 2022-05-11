@@ -31,6 +31,7 @@ function App() {
          <Route path='/inventory/:id' element={<Inventory></Inventory>}></Route>
          <Route path='/ManageInventories' element={<ManageInventories></ManageInventories>}></Route>
          <Route path='/addItem' element={<AddItem></AddItem>}></Route>
+         
 
 
          <Route path='/login' element={<Login></Login>}></Route>
@@ -38,7 +39,7 @@ function App() {
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path='/myItem' element={<MyItems></MyItems>}></Route>
         <Route path="/blogs" element={<Blogs />} />
-        <Route path="/about" element={<About></About>} />
+        
         <Route path="*" element={<NotFound />} />
 
       </Routes>

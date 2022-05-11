@@ -39,6 +39,7 @@ const Header = () => {
                                 Home
                             </Link>
                         </li>
+
                         {user ? (
                             <>
                                 <li className="nav-item">
@@ -56,6 +57,7 @@ const Header = () => {
                                         My items
                                     </Link>
                                 </li>
+
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/blogs">
                                         Blogs
@@ -78,8 +80,18 @@ const Header = () => {
                         ) : (
                             <>
                                 <li className="nav-item">
+                                    <Link to="/allItems" className="nav-link">
+                                        All_products
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
                                     <Link className="nav-link" to="/blogs">
                                         Blogs
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/productDetails/:ProductDetailsId">
+                                        inventory
                                     </Link>
                                 </li>
                                 <li className="nav-item">

@@ -34,7 +34,7 @@ const Login = () => {
         navigetToRegister(email, password);
     }
     const navigetToRegister = event => {
-        naviget('/home');
+        naviget('/register');
 
     }
     return (

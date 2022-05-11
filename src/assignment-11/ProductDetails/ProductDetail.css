@@ -1,0 +1,17 @@
+.detailComponent{
+    
+    border: 1px solid;
+    
+}
+img{
+    width: 50%;
+}
+.detailCart{
+    display: flex;
+    width: 50%;
+    margin-left: 10px;
+}
+
+.detail{
+    margin-left: 30px;
+}

@@ -10,13 +10,16 @@ import ProductDetails from './assignment-11/ProductDetails/ProductDetails';
 import Inventory from './assignment-11/Inventory/Inventory';
 import ManageInventories from './assignment-11/ManageInventories/ManageInventories';
 import AddItem from './assignment-11/AddItem/AddItem';
-
+import CheckOut from './assignment-11/CheckOut/CheckOut';
 import ResetPassword from './assignment-11/ResetPassword/ResetPassword';
 import Register from './assignment-11/Register/Register';
 import MyItems from './assignment-11/MyItems/MyItems';
 import Blogs from './assignment-11/Blogs/Blogs';
 import NotFound from './assignment-11/NotFound/NotFound';
 import Login from './assignment-11/Login/Login';
+import RequireAuth from './assignment-11/RequireAuth/RequireAuth';
+import AllProducts from './assignment-11/AllProducs/AllProducts';
+
 
 function App() {
   return (
@@ -24,6 +27,7 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
+        
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/productDetails/:ProductDetailsId' element={<ProductDetails></ProductDetails>}></Route>
@@ -31,13 +35,21 @@ function App() {
          <Route path='/inventory/:id' element={<Inventory></Inventory>}></Route>
          <Route path='/ManageInventories' element={<ManageInventories></ManageInventories>}></Route>
          <Route path='/addItem' element={<AddItem></AddItem>}></Route>
+         <Route path='/checkOut' element={
+         <RequireAuth>
+           <CheckOut></CheckOut>
+         </RequireAuth>
          
+         }></Route>
+
+         <Route path='/allItems' element={<AllProducts></AllProducts>} ></Route>
 
 
          <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path='/myItem' element={<MyItems></MyItems>}></Route>
+        
         <Route path="/blogs" element={<Blogs />} />
         
         <Route path="*" element={<NotFound />} />

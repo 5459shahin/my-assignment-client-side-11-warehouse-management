@@ -15,10 +15,10 @@ const Items = () => {
     }, []);
     
     return (
-        <div>
+        <div className="container items-container">
             {/* <h2> Our Item</h2> */}
             <div className="row">
-                <h1 className='services-title mt-5 mb-5'>Our Services</h1>
+                <h1 className='services-title mt-5 mb-5'>Our Services: {services.length}</h1>
                 <div className='services-container'>
 
                         {services.length === 0 ? <Loading /> : ""}

@@ -8,7 +8,7 @@ import Home from './assignment-11/Home/Home';
 import Update from './assignment-11/Update/Update';
 import ProductDetails from './assignment-11/ProductDetails/ProductDetails';
 import Inventory from './assignment-11/Inventory/Inventory';
-import ManageInventories from './assignment-11/ManageInventories/ManageInventories';
+/* import ManageInventories from './assignment-11/ManageInventories/ManageInventories'; */
 import AddItem from './assignment-11/AddItem/AddItem';
 import CheckOut from './assignment-11/CheckOut/CheckOut';
 import ResetPassword from './assignment-11/ResetPassword/ResetPassword';
@@ -30,15 +30,21 @@ function App() {
         
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/about' element={<About></About>}></Route>
-        <Route path='/productDetails/:ProductDetailsId' element={<ProductDetails></ProductDetails>}></Route>
+        <Route path='/productDetails/:ProductDetailsId'element={
+          <RequireAuth>
+          <ProductDetails></ProductDetails>
+          </RequireAuth>
+
+        }></Route>
+        {/* <Route path='/productDetails/:ProductDetailsId' element={<ProductDetails></ProductDetails>}></Route> */}
          <Route path='/update/:id' element={<Update></Update>}></Route>
          <Route path='/inventory/:id' element={<Inventory></Inventory>}></Route>
-         <Route path='/ManageInventories' element={<ManageInventories></ManageInventories>}></Route>
+         {/* <Route path='/ManageInventories' element={<ManageInventories></ManageInventories>}></Route> */}
          <Route path='/addItem' element={<AddItem></AddItem>}></Route>
          <Route path='/checkOut' element={
-         <RequireAuth>
+         
            <CheckOut></CheckOut>
-         </RequireAuth>
+         
          
          }></Route>
 

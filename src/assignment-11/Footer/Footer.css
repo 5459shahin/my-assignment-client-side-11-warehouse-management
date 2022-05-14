@@ -1,0 +1,17 @@
+.footer-section{
+    margin-top: 30px;
+    height: 330px;
+    background-color: black;
+}
+.footer-contain{
+    justify-content:center;
+    
+}
+.footer-card{
+    
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 300px;
+    justify-content: space-between;
+    
+}

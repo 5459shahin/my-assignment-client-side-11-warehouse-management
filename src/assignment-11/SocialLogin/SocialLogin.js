@@ -17,11 +17,11 @@ const SocialLogin = () => {
     if (user) {
         navigate('/product');
     }
-    return (
-        <div>
+    return ( 
+        <div className='w-100'>
             <hr />
             {errorElement}
-            <button onClick={() => { signInWithGoogle() }} className='btn btn-info w-50'>
+            <button onClick={() => { signInWithGoogle() }} className='w-100  btn btn-info w-50'>
                
                 <span className='px-2'>Google Sing In</span></button>
 

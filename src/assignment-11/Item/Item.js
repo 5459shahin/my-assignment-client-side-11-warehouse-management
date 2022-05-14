@@ -24,8 +24,9 @@ const Item = ({ service }) => {
                         <h6 className="card-text">${price}</h6>
                         <h6 className="card-text">{quantity} Pieces</h6>
                     </div>
-                    <p className="card-text">{description}</p>
                     <h6 className="card-text">Supplier: {supplier}</h6>
+                    <p className="card-text">{description}</p>
+                    
                 </div>
                 <div className="card-footer bg-transparent border-0">
                     <button onClick={()=> navigateToServiceDetail (_id)} className="btn btn-dark w-100">

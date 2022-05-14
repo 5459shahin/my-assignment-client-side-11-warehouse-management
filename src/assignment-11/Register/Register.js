@@ -21,7 +21,7 @@ const Register = () => {
     if (user) {
         navigate('/home');
     }
-    const handeleRegstier = event => {
+    const handleRegister = event => {
         event.preventDefault();
 
         const email = event.target.email.value;
@@ -30,19 +30,17 @@ const Register = () => {
 
     }
     return (
-        <div className=''>
+        <div className='singIn-from'>
             <h1>Sing Up Now</h1>
-            <Form onSubmit={handeleRegstier}>
+            <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
+                  
                     <Form.Control name='email' type="email" placeholder="Enter email" required />
-                    <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                    </Form.Text>
+                    
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
+                  
                     <Form.Control name='password' type="password" placeholder="Password" required />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">

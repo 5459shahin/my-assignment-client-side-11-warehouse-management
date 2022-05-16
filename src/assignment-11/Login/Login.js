@@ -35,8 +35,8 @@ const Login = () => {
         navigate(from, { replace: true });
     }
     if (error) {
-        errorElement = <p className='text-danger text-center bg-dark'> email & password not valid</p>
-        
+        errorElement = <p className='text-danger text-center bg-dark'> email and password not valid</p>
+
     }
 
 
@@ -59,7 +59,7 @@ const Login = () => {
             await sendPasswordResetEmail(email);
             toast('Sent email');
         }
-        else{
+        else {
             toast('please enter your email address');
         }
     }
@@ -67,7 +67,7 @@ const Login = () => {
     return (
         <div className='singIn-from'>
             <h1>Login Now</h1>
-            <Form onSubmit={handleSubmit}>
+            <Form className='w-50 login-form' onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
@@ -82,11 +82,16 @@ const Login = () => {
                 <Button variant="primary mx-auto" type="submit">
                     Login
                 </Button>
+
+                {errorElement}
+
+                <p>Create a new account <Link to='/register' className='text-danger pe-auto text-decoration-none' onClick={navigateToRegister}>Sing Up Now</Link></p>
+
+                <p>Forget Password? <button className='btn btn-link text-light pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
+
             </Form>
-            {errorElement}
-           
-            <p>Create a new account <Link to='/' className='text-danger pe-auto text-decoration-none' onClick={navigateToRegister}>Sing Up Now</Link></p>
-            <p>Forget Password? <button className='btn btn-link text-light pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
+
+
             <SocialLogin></SocialLogin>
             <ToastContainer></ToastContainer>
 

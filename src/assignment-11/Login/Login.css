@@ -3,6 +3,10 @@
     
     
 }
+.login-form{
+    margin: 0 auto;
+
+}
 .singIn-from h1{
     text-align: center;
     color: darkslategray;

@@ -57,9 +57,12 @@ const ProductDetails = () => {
 
 
       const handleDelivery = ()=>{
-        const deliveryQuantity = product.quantity
+        const deliveryQuantity = product.quantity;
+        console.log(deliveryQuantity)
         
         const updateQuantity = deliveryQuantity - 1;
+        console.log(updateQuantity)
+
       const url = `http://localhost:5000/quantity/${ProductDetailsId}`;
 
       fetch(url, {
@@ -72,7 +75,7 @@ const ProductDetails = () => {
       })
       .then(res => res.json())
       .then( data =>{
-          console.log('success:', data);
+          console.log(data);
           setProduct(product);
           
       })
@@ -101,34 +104,7 @@ const ProductDetails = () => {
                 <button className=' w-100 justify-content-center add-quantity-btn bg-warning' onClick={()=> navigate('/allItems')}> Manage Items</button>
             </form> 
 
-
-           {/*  <table className='product-details border w-100'>
-                <thead>
-                    <tr>
-                        <th>img</th>
-                        <th>price</th>
-                        <th>quantity</th>
-                        <th>product name</th>
-                        <th>supplier</th>
-                        
-                        <th>deliver</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td><img height={"50px"} src={product.img} alt="" /></td>
-                    <td> {product.price} </td>
-                    <td> {product.quantity} </td>
-                    <td> {product.cycle} </td>
-                    <td> {product.supplier} </td>
-                    
-                    
-                    <td><button onClick={handleDelivery}>deliver</button></td>
-                    
-                </tr>
-            </table> */}
             
-          
-
 
 
         </div>

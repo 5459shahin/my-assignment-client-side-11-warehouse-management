@@ -36,10 +36,10 @@ function App() {
           </RequireAuth>
 
         }></Route>
-        {/* <Route path='/productDetails/:ProductDetailsId' element={<ProductDetails></ProductDetails>}></Route> */}
+       
          <Route path='/update/:id' element={<Update></Update>}></Route>
          <Route path='/inventory/:id' element={<Inventory></Inventory>}></Route>
-         {/* <Route path='/ManageInventories' element={<ManageInventories></ManageInventories>}></Route> */}
+        
          <Route path='/addItem' element={<AddItem></AddItem>}></Route>
          <Route path='/checkOut' element={
          

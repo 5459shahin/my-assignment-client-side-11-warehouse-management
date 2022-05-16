@@ -34,25 +34,29 @@ const Register = () => {
             <h1>Sing Up Now</h1>
             <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  
-                    <Form.Control name='email' type="email" placeholder="Enter email" required />
-                    
+
+                    <Form.Control name='name' type="text" placeholder="Your Name" required />
+
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                  
+
+                    <Form.Control name='password' type="password" placeholder="Password" required />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+
                     <Form.Control name='password' type="password" placeholder="Password" required />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" required />
                 </Form.Group>
                 <Button variant="primary" type="submit">
-                   Register 
+                    Register
                 </Button>
             </Form>
             <p>already have a account? <Link to="/login" className='text-danger pe-auto text-decoration-none' onClick={navigateLogin}>Login Now</Link> </p>
             <SocialLogin></SocialLogin>
-            
+
         </div>
     );
 };

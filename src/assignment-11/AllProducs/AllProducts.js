@@ -1,59 +1,81 @@
 import React from 'react';
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import useProduct from '../Hooks/useProduct';
-import {MdDeleteForever} from 'react-icons/md';
+import { MdDeleteForever } from 'react-icons/md';
 import './AllProducts.css';
 
 const AllProducts = () => {
     const [products, setProducts] = useProduct();
     const navigate = useNavigate();
 
-    const deleteItem = (id)=>{
+    const deleteItem = (id) => {
         const proceed = window.confirm('Are You delete the Cart');
-        if(proceed){
+        if (proceed) {
             const url = `http://localhost:5000/products/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
-            .then(res => res.json())
-            .then(data => {
-                const remaining = products.filter(product => product._id !== id);
-                setProducts(remaining);
-            })
+                .then(res => res.json())
+                .then(data => {
+                    const remaining = products.filter(product => product._id !== id);
+                    setProducts(remaining);
+                })
 
         }
 
     }
 
-    
+    const navigateToServiceDetail = id => {
+        navigate(`/productDetails/${id}`);
+
+    }
+
+
     return (
         <div className="row container mx-auto all-products-container">
             <h1 className='text-center'>see All products</h1>
+           
             {
-                products.map(product => 
-                    <div className=' all-products mx-auto col col-12 col-lg-4 col-md-12 gy-3 p-5 '>
-                        <div><img className='img-fluid w-25 mb-3 ' src={product.img} alt="" />
-                        <div><h6>{product.cycle}</h6></div>
-                        <div><h6>${product.price}</h6></div>
-                        <div><h6>quantity: {product.quantity}</h6></div>
-                        <div><h6> supplier: {product.supplier}</h6></div>
-                        <div><p>{product.description}</p></div>
-                        <div><p className='delete-btn text-center' onClick={()=>deleteItem(product._id)}><MdDeleteForever/></p></div>
-                        
-                        </div>
+                products.map(product =>
 
-                        
+                    <div>
                        
-                    </div>
-                    
-                    )
-                    
-                    
-                    
-                    
-            }
 
-            <button onClick={()=> navigate('/addItem')}>Add Item</button>
+                        <table class="table">
+                            <thead>
+                                <tr>
+
+                                    <th scope="col">name</th>
+                                    <th scope="col">price</th>
+                                    <th scope="col">quantity</th>
+                                    <th scope="col">supplier</th>
+
+                                </tr>
+                            </thead>
+                            <tbody className='w-100'>
+                                <tr>
+                                    <td><img height={'50px'} width={'80px'} lassName="all-img" src={product.img} alt="" /></td>
+                                    <td>{product.cycle}</td>
+                                    <td>{product.price}</td>
+                                    <td>{product.quantity}</td>
+                                    <td>{product.supplier}</td>
+                                    <td><button onClick={()=> navigateToServiceDetail ('_id')}>
+                                         
+                                        Update Stock
+                                    </button></td>
+                                    <td> <p className='delete-btn text-center justify-content-end' onClick={() => deleteItem(product._id)}><MdDeleteForever /></p>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                )
+            }
+            <button className='bg-dark text-light' onClick={() => navigate('/addItem')}>Add Item</button>
         </div>
     );
 };

@@ -13,7 +13,7 @@ const ProductDetails = () => {
 
     /*  console.log(product); */
     useEffect(() => {
-        const url = `http://localhost:5000/products/${ProductDetailsId}`;
+        const url = `https://damp-fortress-96356.herokuapp.com/products/${ProductDetailsId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data));
@@ -29,7 +29,7 @@ const ProductDetails = () => {
           const quantity = parseInt(e.target.quantity.value)
           
           const updateQuantity = deliveryQuantity + quantity;
-        const url = `http://localhost:5000/quantity/${ProductDetailsId}`;
+        const url = `https://damp-fortress-96356.herokuapp.com/quantity/${ProductDetailsId}`;
 
         fetch(url, {
             method: 'PUT',
@@ -63,7 +63,7 @@ const ProductDetails = () => {
         const updateQuantity = deliveryQuantity - 1;
         console.log(updateQuantity)
 
-      const url = `http://localhost:5000/quantity/${ProductDetailsId}`;
+      const url = `https://damp-fortress-96356.herokuapp.com/quantity/${ProductDetailsId}`;
 
       fetch(url, {
           method: 'PUT',

@@ -42,11 +42,7 @@ const Header = () => {
 
                         {user ? (
                             <>
-                                {/* <li className="nav-item">
-                                    <Link to="/manageInventories" className="nav-link">
-                                        Manage Items
-                                    </Link>
-                                </li> */}
+                                
                                 <li className="nav-item">
                                     <Link to="/allItems" className="nav-link">
                                         All_products
@@ -68,11 +64,8 @@ const Header = () => {
                                         Blogs
                                     </Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/about">
-                                        About Us
-                                    </Link>
-                                </li>
+                                
+                                
                                 <li className="nav-item">
                                     <button
                                         className="nav-link btn btn-primary rounded-pill text-white px-3"
@@ -84,11 +77,7 @@ const Header = () => {
                             </>
                         ) : (
                             <>
-                                {/*  <li className="nav-item">
-                                    <Link to="/allItems" className="nav-link">
-                                        All_products
-                                    </Link>
-                                </li> */}
+                              
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/blogs">
                                         Blogs
@@ -105,7 +94,7 @@ const Header = () => {
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/about-us">
+                                    <Link className="nav-link" to="/about">
                                         About Us
                                     </Link>
                                 </li>

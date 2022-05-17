@@ -4,7 +4,7 @@
 //     const [service, setService] = useState({});
 
 //     useEffect ( () => {
-//         const url = `http://localhost:5000/item/${serviceId}`;
+//         const url = `https://damp-fortress-96356.herokuapp.com/item/${serviceId}`;
 //         console.log(url);
 //         fetch(url)
 //         .then(res => res.json())

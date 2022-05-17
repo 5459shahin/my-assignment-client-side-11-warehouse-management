@@ -11,7 +11,7 @@ const AllProducts = () => {
     const deleteItem = (id) => {
         const proceed = window.confirm('Are You delete the Cart');
         if (proceed) {
-            const url = `http://localhost:5000/products/${id}`
+            const url = `https://damp-fortress-96356.herokuapp.com/products/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -59,9 +59,7 @@ const AllProducts = () => {
                                     <td>{product.price}</td>
                                     <td>{product.quantity}</td>
                                     <td>{product.supplier}</td>
-                                    <td><button onClick={()=> navigateToServiceDetail ('_id')}>
-                                         
-                                        Update Stock
+                                    <td><button onClick={()=> navigateToServiceDetail ('_id')}> Update Stock
                                     </button></td>
                                     <td> <p className='delete-btn text-center justify-content-end' onClick={() => deleteItem(product._id)}><MdDeleteForever /></p>
                                     </td>

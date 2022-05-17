@@ -6,7 +6,6 @@ import Footer from './assignment-11/Footer/Footer';
 import Header from './assignment-11/Header/Header';
 import Home from './assignment-11/Home/Home';
 import ProductDetails from './assignment-11/ProductDetails/ProductDetails';
-import Inventory from './assignment-11/Inventory/Inventory';
 import AddItem from './assignment-11/AddItem/AddItem';
 import Register from './assignment-11/Register/Register';
 import Blogs from './assignment-11/Blogs/Blogs';
@@ -33,12 +32,6 @@ function App() {
         }></Route>
 
 
-        <Route path='/inventory/:id' element={
-        <RequireAuth>
-          <Inventory></Inventory>
-          </RequireAuth>
-        }></Route>
-
         <Route path='/addItem' element={
           <RequireAuth>
             <AddItem></AddItem>
@@ -51,8 +44,6 @@ function App() {
 
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
-        {/*  <Route path="/reset-password" element={<ResetPassword />} /> */}
-
         <Route path="/blogs" element={<Blogs />} />
 
         <Route path="*" element={<NotFound />} />

@@ -25,10 +25,7 @@ const AllProducts = () => {
 
     }
 
-    const navigateToServiceDetail = id => {
-        navigate(`/productDetails/${id}`);
-
-    }
+   
 
 
     return (
@@ -59,8 +56,7 @@ const AllProducts = () => {
                                     <td>{product.price}</td>
                                     <td>{product.quantity}</td>
                                     <td>{product.supplier}</td>
-                                    <td><button onClick={()=> navigateToServiceDetail ('_id')}> Update Stock
-                                    </button></td>
+                                    
                                     <td> <p className='delete-btn text-center justify-content-end' onClick={() => deleteItem(product._id)}><MdDeleteForever /></p>
                                     </td>
 

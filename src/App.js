@@ -5,15 +5,13 @@ import About from './assignment-11/About/About';
 import Footer from './assignment-11/Footer/Footer';
 import Header from './assignment-11/Header/Header';
 import Home from './assignment-11/Home/Home';
-import Update from './assignment-11/Update/Update';
+/* import Update from './assignment-11/Update/Update'; */
 import ProductDetails from './assignment-11/ProductDetails/ProductDetails';
 import Inventory from './assignment-11/Inventory/Inventory';
-/* import ManageInventories from './assignment-11/ManageInventories/ManageInventories'; */
 import AddItem from './assignment-11/AddItem/AddItem';
-import CheckOut from './assignment-11/CheckOut/CheckOut';
-import ResetPassword from './assignment-11/ResetPassword/ResetPassword';
+/* import CheckOut from './assignment-11/CheckOut/CheckOut'; */
+/* import ResetPassword from './assignment-11/ResetPassword/ResetPassword'; */
 import Register from './assignment-11/Register/Register';
-import MyItems from './assignment-11/MyItems/MyItems';
 import Blogs from './assignment-11/Blogs/Blogs';
 import NotFound from './assignment-11/NotFound/NotFound';
 import Login from './assignment-11/Login/Login';
@@ -37,24 +35,23 @@ function App() {
 
         }></Route>
        
-         <Route path='/update/:id' element={<Update></Update>}></Route>
+         {/* <Route path='/update/:id' element={<Update></Update>}></Route> */}
          <Route path='/inventory/:id' element={<Inventory></Inventory>}></Route>
         
          <Route path='/addItem' element={<AddItem></AddItem>}></Route>
-         <Route path='/checkOut' element={
+         {/* <Route path='/checkOut' element={
          
            <CheckOut></CheckOut>
          
          
-         }></Route>
+         }></Route */}>
 
          <Route path='/allItems' element={<AllProducts></AllProducts>} ></Route>
 
 
          <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
-        <Route path="/reset-password" element={<ResetPassword />} />
-        <Route path='/myItem' element={<MyItems></MyItems>}></Route>
+       {/*  <Route path="/reset-password" element={<ResetPassword />} /> */}
         
         <Route path="/blogs" element={<Blogs />} />
         

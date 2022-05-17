@@ -11,9 +11,11 @@ const Item = ({ service }) => {
 
     }
     return (
-        <div className='col-md-6 col-lg-4 col-12'>
+        <div className=''>
+            
 
-            <div className="product card  text-center py-3">
+           <div className='col-md-6 col-lg-4 col-12'>
+           <div className="product card  text-center py-3">
                 <img className="  mx-auto item-image" src={img} alt="" />
                 {quantity === 0 ? <h6 className="sold-out">Sold <br /> Out</h6> : ""}
                 <div className="card-body">
@@ -34,6 +36,8 @@ const Item = ({ service }) => {
                     </button>
                 </div>
             </div>
+           </div>
+            
 
            
         </div>

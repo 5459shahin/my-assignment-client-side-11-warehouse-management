@@ -1,0 +1,17 @@
+.information {
+    background-color: rgb(220, 238, 232);
+    margin-top: 20px;
+    padding: 20px;
+    height: 400px;
+
+}
+.information-card{
+    margin-top: 60px;
+}
+.touch{
+    width: 40%;
+}
+
+.address{
+    padding: 30px;
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import CheckOut from '../CheckOut/CheckOut';
 import useServiceDetail from '../Hooks/useServiceDetail';
 import './Inventory.css'
 
@@ -15,7 +14,7 @@ const Inventory = () => {
             </h2>
 
 
-            <CheckOut></CheckOut>
+           
         </div>
     );
 };

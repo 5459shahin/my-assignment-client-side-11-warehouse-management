@@ -62,7 +62,7 @@ const Register = () => {
                    input check box
                    =================== */}
                 <input onClick={() => setAgree(!agree)} type="checkbox" name="" id="check-box" />
-                <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept Genius Car terms and Conditions</label>
+                <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept O bick terms and Conditions</label>
                
 
                 <input

@@ -42,21 +42,26 @@ const Header = () => {
 
                         {user ? (
                             <>
-
+                                
                                 <li className="nav-item">
                                     <Link to="/allItems" className="nav-link">
                                         All_products
                                     </Link>
                                 </li>
-
+                                <li className="nav-item">
+                                    <Link to="/addItem" className="nav-link">
+                                        Add Item
+                                    </Link>
+                                </li>
+            
 
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/blogs">
                                         Blogs
                                     </Link>
                                 </li>
-
-
+                                
+                                
                                 <li className="nav-item">
                                     <button
                                         className="nav-link btn btn-primary rounded-pill text-white px-3"
@@ -68,19 +73,13 @@ const Header = () => {
                             </>
                         ) : (
                             <>
-                                <li className="nav-item">
-                                    <Link to="/addItem" className="nav-link">
-                                        Add Item
-                                    </Link>
-                                </li>
-
-
+                              
                                 <li className="nav-item">
                                     <Link className="nav-link text-Warning" to="/blogs">
                                         Blogs
                                     </Link>
                                 </li>
-
+                               
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/addItem">
                                         Add Item
